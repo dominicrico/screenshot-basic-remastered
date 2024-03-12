@@ -24,5 +24,8 @@ module.exports = {
     filename: 'server.js',
     path: __dirname + '/dist/'
   },
+  node: {
+    __dirname: true
+  },
   target: 'node'
 }
