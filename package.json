@@ -24,8 +24,11 @@
     "koa-router": "^7.4.0",
     "mv": "^2.1.1",
     "ts-loader": "^9.5.1",
-    "typescript": "3.2.2",
+    "typescript": "^5.4.2",
     "uuid": "^3.3.2",
     "webpack": "^5.90.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
