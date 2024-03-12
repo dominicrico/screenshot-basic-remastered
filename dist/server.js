@@ -1,3 +1,19 @@
+var IDX=256, HEX=[];
+while (IDX--) HEX[IDX] = (IDX + 256).toString(16).substring(1);
+
+function hexoid(len) {
+	len = len || 16;
+	var str='', num=0;
+	return function () {
+		if (!str || num === 256) {
+			str=''; num=(1+len)/2 | 0;
+			while (num--) str += HEX[256 * Math.random() | 0];
+			str = str.substring(num=0, len-2);
+		}
+		return str + HEX[num++];
+	};
+}
+
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -11888,7 +11904,6 @@ var __dirname = "node_modules\\koa-body\\node_modules\\formidable\\src";
 
 const os = __webpack_require__(857);
 const path = __webpack_require__(6928);
-const hexoid = __webpack_require__(5583);
 const once = __webpack_require__(3519);
 const dezalgo = __webpack_require__(2943);
 const { EventEmitter } = __webpack_require__(4434);
