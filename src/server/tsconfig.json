@@ -1,20 +1,17 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": { "*": ["types/*"] },
-        "outDir": "./",
-        "noImplicitAny": false,
-        "module": "es6",
-        "target": "es6",
-        "allowJs": true,
-        "lib": ["es2017"],
-        "types": ["@citizenfx/server", "@citizenfx/client", "node"],
-        "moduleResolution": "node"
-    },
-    "include": [
-        "./**/*"
-    ],
-    "exclude": [
-        
-    ]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"] },
+    "outDir": "./",
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es6",
+    "allowJs": true,
+    "lib": ["es2017"],
+    "types": ["@citizenfx/server", "@citizenfx/client", "node"],
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
+  },
+  "include": ["./**/*"],
+  "exclude": []
 }
